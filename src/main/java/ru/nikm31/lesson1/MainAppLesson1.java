@@ -11,9 +11,12 @@ import ru.nikm31.lesson1.oop.Figure;
 import ru.nikm31.lesson1.oop.Square;
 import ru.nikm31.lesson1.oop.Triangle;
 
+import java.util.ArrayList;
+
 public class MainAppLesson1 {
 
     public static void main(String[] args) {
+
 
         Person person = Person.builder()
                 .setGender("male")
@@ -53,6 +56,5 @@ public class MainAppLesson1 {
         lorry.start();
         lorry.move();
         lorry.stop();
-
     }
 }
