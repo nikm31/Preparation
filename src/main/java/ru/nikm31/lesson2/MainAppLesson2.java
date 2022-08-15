@@ -54,5 +54,17 @@ public class MainAppLesson2 {
         System.out.println(arrayList.isEmpty());
         arrayList.display();
 
+        isPalindrome(111);
+
+    }
+
+    public static boolean isPalindrome(int x) {
+        String[] split = Integer.toString(x).split("");
+        for (int i = 0, j = split.length-1; i < j; i++, j--) {
+            if (!(split[i].equals(split[j]))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
